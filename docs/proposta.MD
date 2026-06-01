@@ -6,281 +6,101 @@ A proposta deve apresentar uma ideia simples, clara e viável para ser desenvolv
 
 ## 1. Nome provisório do jogo
 
-Escreva aqui o nome provisório do jogo.
-
-Exemplo:
-
-> Corrida dos Obstáculos
+> Guess the Movie
 
 ## 2. Integrantes do grupo
 
-Liste os integrantes do grupo.
-
-- Nome 1:
-- Nome 2:
-- Nome 3:
-- Nome 4:
+- Nome 1: Guilherme Henrique Ribeiro Silva
 
 ## 3. Tipo de jogo
 
-Indique o tipo de jogo que será desenvolvido.
-
-Exemplos:
-
-- jogo de desviar de obstáculos;
-- jogo de coleta de itens;
-- labirinto simples;
-- jogo de perguntas e respostas;
-- jogo de memória;
-- Pong;
-- Snake;
-- Breakout;
-- nave desviando de meteoros;
-- corrida simples com obstáculos;
-- jogo de clique rápido;
-- jogo de sobrevivência simples.
-
 Tipo escolhido pelo grupo:
 
-> Escreva aqui.
+> jogo de perguntas e respostas (Trivia / Quiz)
 
 ## 4. Descrição geral do jogo
 
-Explique, em poucas linhas, como o jogo funcionará.
-
-Procure responder:
-
-- O que aparece na tela?
-- O que o jogador controla?
-- O que o jogador precisa fazer?
-- Quais desafios aparecem durante a partida?
-
-Descrição:
-
-> Escreva aqui.
+O jogo apresentará ao jogador uma imagem borrada na tela, que corresponde a uma cena ou pôster de um filme famoso. O jogador controla a navegação por botões na tela (usando o mouse) ou atalhos no teclado para solicitar dicas textuais ou digitar/selecionar o nome do filme correto. O objetivo é adivinhar o filme consumindo o mínimo de dicas possível. À medida que o jogador erra ou pede dicas, o nível de desfoque (blur) da imagem diminui gradativamente, facilitando a visualização, porém reduzindo a pontuação máxima que ele pode obter naquela rodada.
 
 ## 5. Objetivo do jogador
 
-Explique qual é o objetivo principal do jogador.
-
-Exemplos:
-
-- coletar o maior número possível de itens;
-- sobreviver pelo maior tempo possível;
-- chegar até o final do labirinto;
-- acertar alvos;
-- responder perguntas corretamente;
-- evitar obstáculos;
-- quebrar todos os blocos.
-
-Objetivo:
-
-> Escreva aqui.
+> Responder corretamente quais são os filmes exibidos nas fotos, acumulando a maior pontuação possível ao final de uma rodada de perguntas e sobrevivendo com as vidas disponíveis.
 
 ## 6. Regras principais
 
-Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador começa com 3 vidas.
-- Cada moeda coletada vale 10 pontos.
-- Cada colisão com obstáculo remove 1 vida.
-- A partida termina quando as vidas chegam a zero.
-- O jogador vence se alcançar 100 pontos.
-
-Regras do grupo:
-
-- Regra 1:
-- Regra 2:
-- Regra 3:
-- Regra 4:
-- Regra 5:
+- O jogador inicia a partida com 3 vidas e uma pontuação zerada.
+- Cada filme começa com a imagem 100% borrada e uma pontuação máxima de 100 pontos configurada para aquela rodada.
+- O jogador pode revelar até 2 dicas textuais por filme; cada dica solicitada reduz a pontuação máxima da rodada em 25 pontos.
+- Cada palpite incorreto remove 1 vida do jogador e reduz ligeiramente o desfoque da imagem.
+- Acertar o filme soma os pontos restantes da rodada à pontuação global do jogador e passa para o próximo filme.
+- A partida é encerrada se o jogador perder todas as 3 vidas ou se conseguir responder com sucesso todo o banco de dados de filmes da partida.
 
 ## 7. Condição de vitória
 
-Explique como o jogador vence ou conclui o jogo.
-
-Exemplos:
-
-- atingir determinada pontuação;
-- chegar ao final da fase;
-- sobreviver até o tempo acabar;
-- responder uma quantidade mínima de perguntas;
-- quebrar todos os blocos.
-
-Condição de vitória:
-
-> Escreva aqui.
+> O jogador vence ao responder corretamente a lista de filmes pré-definida para a sessão (ex: um bloco de 10 filmes) antes que suas vidas cheguem a zero.
 
 ## 8. Condição de derrota ou encerramento
 
-Explique como o jogador perde ou quando a partida termina.
-
-Exemplos:
-
-- perder todas as vidas;
-- acabar o tempo;
-- colidir com determinado obstáculo;
-- errar muitas perguntas;
-- deixar a bola cair, no caso de Breakout ou Pong.
-
-Condição de derrota ou encerramento:
-
-> Escreva aqui.
+> A partida termina em derrota imediatamente quando as vidas do jogador chegam a zero devido a palpites errados.
 
 ## 9. Elementos previstos no jogo
 
-Descreva os principais elementos que farão parte do jogo.
-
 ## Jogador ou elemento principal
 
-Exemplo:
-
-> Um personagem controlado pelas setas do teclado.
-
-Descrição:
-
-> Escreva aqui.
+> O jogador atua através de uma interface gráfica estática e dinâmica de quiz. Ele interage utilizando o ponteiro do mouse para clicar em caixas de opções (múltipla escolha) ou utilizando o teclado para digitar o nome do filme em um campo de texto.
 
 ## Obstáculos, inimigos ou desafios
 
-Exemplo:
-
-> Obstáculos aparecem em posições aleatórias e devem ser evitados.
-
-Descrição:
-
-> Escreva aqui.
+> O principal desafio do jogo é o fator visual limitante (imagem desfocada) combinado com o limite de tempo por rodada (opcional) e o banco de questões que exige conhecimento de cinema por parte do usuário.
 
 ## Itens, alvos ou objetos de interação
 
-Exemplo:
-
-> Moedas aparecem na tela e aumentam a pontuação quando coletadas.
-
-Descrição:
-
-> Escreva aqui.
+> Botões clicáveis na interface (Ex: "Pedir Dica", "Confirmar Resposta", "Pular"), campo de inserção de texto e caixas de exibição contendo as dicas liberadas.
 
 ## Pontuação, vidas, tempo ou progresso
 
-Exemplo:
-
-> O jogador começa com 3 vidas e ganha 10 pontos por item coletado.
-
-Descrição:
-
-> Escreva aqui.
+> Exibição persistente no topo da tela indicando a pontuação atual do jogador, quantidade de vidas restantes (representadas por ícones de corações ou rolos de filme) e uma barra de progresso indicando em qual filme ele está (ex: 3/10).
 
 ## 10. Controles previstos
 
-Informe os comandos que serão utilizados pelo jogador.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
-
-Controles do grupo:
-
-- Tecla/comando:
-- Tecla/comando:
-- Tecla/comando:
+- Clique do Botão Esquerdo do Mouse: Interagir com os botões da interface, selecionar alternativas e focar no campo de digitação.
+- Teclas Alfanuméricas (A-Z) e Espaço: Utilizados para digitar o nome do filme na caixa de texto (caso não seja múltipla escolha).
+- Tecla Enter: Confirmar e enviar o palpite digitado.
+- Tecla ESC: Pausar ou retornar ao menu principal.
 
 ## 11. Organização inicial do código
 
-Explique como o grupo pretende organizar o código.
-
-Exemplo:
-
-- `main.py`: inicia o jogo;
-- `src/jogo.py`: contém o loop principal;
-- `src/config.py`: guarda configurações como tamanho da tela e cores;
-- `src/funcoes.py`: contém funções auxiliares;
-- `src/dados.py`: contém funções de leitura e escrita de arquivos.
-
 Organização planejada:
 
-> Escreva aqui.
-
+> - `main.py`: Ponto de entrada do programa, inicializa o Pygame e gerencia a alternância entre as telas (Menu, Jogo, Game Over, Vitória).
+> - `src/config.py`: Armazena constantes do sistema (resolução da tela, definição de cores em RGB, caminhos de pastas e fontes).
+> - `src/gerenciador.py`: Controla a lógica do quiz (computação de vidas, cálculo de pontuação, verificação se a resposta digitada está correta).
+> - `src/interface.py`: Responsável por desenhar os elementos visuais na tela (botões, caixas de texto, textos e renderização das imagens).
+> - `src/banco_dados.py`: Responsável por ler o arquivo de dados (JSON ou TXT) contendo os nomes dos filmes, caminhos das imagens e suas respectivas dicas.
 
 ## 12. Recursos externos previstos
 
-Informe se o grupo pretende utilizar imagens, sons, fontes, tutoriais ou códigos externos.
-
-Exemplo:
-
-- imagens obtidas de banco gratuito;
-- sons gratuitos;
-- tutorial usado apenas como referência;
-- fonte personalizada.
-
 Recursos previstos:
 
-> Escreva aqui.
-
-Caso não pretenda utilizar recursos externos, escreva:
-
-> Não pretendemos utilizar recursos externos.
+> - Imagens de cenas de filmes coletadas da internet em formato JPG/PNG.
+> - Efeitos sonoros gratuitos (som de clique, som de acerto e som de erro) obtidos em plataformas como Freesound.
+> - Fonte TrueType (.ttf) personalizada obtida no Google Fonts para estilizar a interface do jogo.
+> - Arquivo de texto estruturado (JSON) montado manualmente para servir de base de dados para as perguntas.
 
 ## 13. Principais dificuldades esperadas
 
-Liste as dificuldades que o grupo acredita que poderá enfrentar.
-
-Exemplos:
-
-- movimentação do jogador;
-- colisão entre objetos;
-- controle de tempo;
-- criação do ranking;
-- organização do código;
-- uso do GitHub;
-- testes;
-- exibição de textos na tela.
-
-Dificuldades previstas:
-
-- Dificuldade 1:
-- Dificuldade 2:
-- Dificuldade 3:
+- Dificuldade 1: Processar e aplicar o efeito de desfoque (blur) nas imagens de forma eficiente em tempo de execução usando o Pygame ou a biblioteca PIL (Pillow).
+- Dificuldade 2: Implementar um sistema amigável e funcional de caixa de digitação de texto (Input Box) nativo no Pygame para o jogador digitar as respostas.
+- Dificuldade 3: Tratar pequenas variações na digitação do jogador (ex: ignorar letras maiúsculas/minúsculas e acentos) para evitar que ele perca vidas por erros de digitação de termos corretos.
 
 ## 14. Escopo mínimo para a entrega final
 
-Descreva qual será a versão mínima aceitável do jogo.
-
-Esta seção é importante para evitar que o grupo escolha uma ideia grande demais.
-
-Exemplo:
-
-> A versão mínima do jogo terá um personagem controlado pelo teclado, obstáculos aparecendo na tela, sistema de vidas, sistema de pontuação e tela de fim de jogo.
-
 Escopo mínimo:
 
-> Escreva aqui.
+> A versão mínima do jogo consistirá em uma tela que exibe uma imagem estática esticada (com efeito de desfoque simulado por versões previamente editadas da imagem), um sistema de múltipla escolha com 4 botões de opções de nomes de filmes, controle de pontuação simples, decréscimo de vidas por erro e telas textuais simples de "Vitória" e "Game Over".
 
 ## 15. Possíveis melhorias, caso haja tempo
 
-Liste funcionalidades extras que o grupo poderá implementar se conseguir concluir o escopo mínimo.
-
-Exemplos:
-
-- tela inicial;
-- sons;
-- fases;
-- aumento de dificuldade;
-- ranking;
-- animações;
-- novos tipos de obstáculos;
-- diferentes personagens;
-- menu de pausa.
-
-Melhorias possíveis:
-
-- Melhoria 1:
-- Melhoria 2:
-- Melhoria 3:
+- Melhoria 1: Implementar sistema de input de texto livre com algoritmo de aproximação de string (métrica de Levenshtein) para aceitar respostas com pequenos erros de digitação.
+- Melhoria 2: Adicionar um cronômetro regressivo por rodada para aumentar a urgência e a dificuldade do jogo.
+- Melhoria 3: Criar um sistema de Ranking (Leaderboard) persistente gravado em arquivo local para salvar as maiores pontuações já obtidas.
