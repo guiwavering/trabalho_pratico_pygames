@@ -1,31 +1,36 @@
-from src.funcoes import calcular_pontos, jogador_perdeu, limitar_valor
+# tests/tests_logica.py
+import unittest
+import sys
+import os
 
+# Ajuste no caminho para que a pasta 'tests' consiga importar a pasta 'src'
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-def test_calcular_pontos():
-    """Deve somar corretamente os pontos atuais com os pontos ganhos."""
-    assert calcular_pontos(10, 5) == 15
+from src.logica import verificar_resposta, calcular_pontos
 
+class TestesDoJogo(unittest.TestCase):
 
-def test_jogador_perdeu_com_zero_vidas():
-    """Deve indicar derrota quando o total de vidas chega a zero."""
-    assert jogador_perdeu(0) is True
+    def test_verificar_resposta_correta(self):
+        """Verifica se o sistema ignora espaços extras e letras maiúsculas/minúsculas."""
+        self.assertTrue(verificar_resposta("harry potter", "Harry Potter"))
+        self.assertTrue(verificar_resposta("INTERSTELLAR", "Interstellar"))
+        self.assertTrue(verificar_resposta(" cidade de deus ", "Cidade de Deus"))
 
+    def test_verificar_resposta_incorreta(self):
+        """Verifica se o sistema rejeita respostas totalmente erradas."""
+        self.assertFalse(verificar_resposta("Avatar", "Matrix"))
+        self.assertFalse(verificar_resposta("O Rei Leão", "It"))
 
-def test_jogador_nao_perdeu_com_vidas():
-    """Nao deve indicar derrota quando o jogador ainda tem vidas."""
-    assert jogador_perdeu(3) is False
+    def test_calcular_pontos(self):
+        """Verifica se a dedução de pontos por dicas solicitadas está correta."""
+        # Nenhuma dica = 100 pontos
+        self.assertEqual(calcular_pontos(0), 100)
+        # 1 dica = 75 pontos
+        self.assertEqual(calcular_pontos(1), 75)
+        # 2 dicas = 50 pontos
+        self.assertEqual(calcular_pontos(2), 50)
+        # Garantir que não fica negativo (caso sejam pedidas mais de 4 dicas)
+        self.assertEqual(calcular_pontos(5), 0)
 
-
-def test_limitar_valor_abaixo_do_minimo():
-    """Deve retornar o limite minimo quando o valor informado for menor."""
-    assert limitar_valor(-5, 0, 100) == 0
-
-
-def test_limitar_valor_acima_do_maximo():
-    """Deve retornar o limite maximo quando o valor informado for maior."""
-    assert limitar_valor(150, 0, 100) == 100
-
-
-def test_limitar_valor_dentro_do_intervalo():
-    """Deve manter o valor original quando ele ja estiver no intervalo."""
-    assert limitar_valor(50, 0, 100) == 50
+if __name__ == '__main__':
+    unittest.main()

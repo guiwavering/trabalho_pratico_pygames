@@ -1,0 +1,52 @@
+[
+    {
+        "titulo": "O Diabo Veste Prada",
+        "imagem": "assets/o_diabo_veste_prada.jpg",
+        "dicas": ["Meryl Streep interpreta uma chefe super exigente.", "Uma jornalista recém-formada vai trabalhar numa revista de moda."]
+    },
+    {
+        "titulo": "Obsession",
+        "imagem": "assets/obsession.jpg",
+        "dicas": ["Suspense psicológico dirigido por Curry Barker.", "um jovem apaixonado e tímido usa um objeto sobrenatural chamado One Wish Willow para fazer com que sua melhor amiga de infância se apaixone por ele."]
+    },
+    {
+        "titulo": "Cidade de Deus",
+        "imagem": "assets/cidade_de_deus.jpg",
+        "dicas": ["Filme brasileiro aclamado internacionalmente, lançado em 2002.", "Acompanha o crescimento de Buscapé e Zé Pequeno."]
+    },
+    {
+        "titulo": "Interstellar",
+        "imagem": "assets/interstellar.jpg",
+        "dicas": ["Ficção científica épica dirigida por Christopher Nolan.", "Exploradores viajam por um buraco de minhoca no espaço em busca de um novo lar."]
+    },
+    {
+        "titulo": "O Silencio dos Inocentes",
+        "imagem": "assets/o_silencio_dos_inocentes.jpg",
+        "dicas": ["Apresenta o icônico vilão Hannibal Lecter.", "Uma agente novata do FBI busca a ajuda de um prisioneiro brilhante."]
+    },
+    {
+        "titulo": "Harry Potter",
+        "imagem": "assets/harry_potter.jpg",
+        "dicas": ["Baseado numa famosa série de livros de fantasia sobre bruxos.", "O protagonista descobre que está sendo perseguido pelo vilão que fugiu de uma prisão nesse Universo."]
+    },
+    {
+        "titulo": "Sinners",
+        "imagem": "assets/sinners.jpg",
+        "dicas": ["Filme de terror/suspense dirigido por Ryan Coogler.", "Estrelado por Michael B. Jordan em um papel duplo enfrentando medos em sua cidade natal."]
+    },
+    {
+        "titulo": "Dez Coisas que Eu Odeio em Voce",
+        "imagem": "assets/dez_coisas_que_eu_odeio_em_voce.jpg",
+        "dicas": ["Uma comédia romântica clássica dos anos 90.", "Baseada na peça 'A Megera Domada' de William Shakespeare."]
+    },
+    {
+        "titulo": "It",
+        "imagem": "assets/it.jpg",
+        "dicas": ["Baseado em um dos livros de terror mais famosos de Stephen King.", "O vilão principal é uma entidade que assume a forma do palhaço Pennywise."]
+    },
+    {
+        "titulo": "O Lobo de Wall Street",
+        "imagem": "assets/lobo_de_wall_street.jpg",
+        "dicas": ["Filme dirigido por Martin Scorsese lançado em 2013.", "Leonardo DiCaprio interpreta a ascensão e queda do corretor da bolsa Jordan Belfort."]
+    }
+]

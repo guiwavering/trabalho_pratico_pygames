@@ -1,91 +1,32 @@
-# Nome do Jogo
+# Guess the Movie 
 
-Projeto final da disciplina de Introdução a Algoritmos/Programação, desenvolvido com Python e Pygame.
+Este é um jogo de trivia (perguntas e respostas) onde o jogador precisa adivinhar qual filme está na imagem borrada. O projeto foi desenvolvido em Python utilizando a biblioteca Pygame, como requisito prático da disciplina.
 
-Este repositório é um template para os grupos da disciplina. A proposta é começar com uma base funcional e evoluir o jogo ao longo do semestre.
+##  Requisitos Implementados
 
-## Integrantes do grupo
+- **Indicadores de Desempenho e Progresso:** O jogador inicia com **3 vidas**. Cada acerto soma pontos (máximo de 100 por filme, reduzindo 25 por cada dica solicitada). Há um contador de progresso na tela indicando a rodada atual (ex: Filme 1/10).
+- **Condições de Fim de Jogo:** - **Vitória:** Acertar os filmes e chegar ao final da lista do banco de dados.
+  - **Derrota:** Errar respostas até as vidas chegarem a zero.
+- **Estruturas de Dados e Arquivos:** - **Leitura:** Os filmes, caminhos das imagens e dicas são carregados a partir de um arquivo `assets/filmes.json` (Lista de Dicionários).
+  - **Escrita:** Ao encerrar a partida (vitória ou derrota), a pontuação final do jogador é salva (append) no arquivo `ranking.txt` na raiz do projeto.
+- **Interação:** Sistema de digitação na tela e clique em botões para solicitar dicas, o que diminui dinamicamente o *blur* (desfoque) da imagem original.
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
-- Nome do integrante 4
+##  Estrutura do Projeto
 
-## Estrutura do projeto
+* `assets/`: Contém as imagens `.jpg` e o banco de dados `filmes.json`.
+* `src/`: Contém os módulos do jogo (`config.py`, `interface.py` e `logica.py`).
+* `tests/`: Contém os testes automatizados da lógica do jogo.
+* `main.py`: Arquivo principal contendo o loop do jogo.
 
-- `main.py`: ponto de entrada da aplicação.
-- `src/`: código-fonte principal do jogo (loop, regras, sprites e dados).
-- `assets/`: imagens, fontes e sons.
-- `data/`: arquivos persistentes (recorde/ranking).
-- `tests/`: testes unitários com `pytest`.
-- `docs/`: documentação do projeto, incluindo proposta inicial.
+##  Como Executar
 
-## Descrição do jogo
+1. Certifique-se de ter o Python instalado na máquina.
+2. Instale o Pygame executando no terminal:
+   `pip install pygame`
+3. Execute o jogo a partir da raiz do projeto:
+   `python main.py`
 
-Descreva brevemente a ideia principal do jogo.
+##  Como Rodar os Testes
 
-Exemplo:
-
-> O jogo consiste em controlar um personagem que deve coletar moedas e evitar obstáculos. O jogador ganha pontos ao coletar itens e perde vidas ao colidir com obstáculos. A partida termina quando o tempo acaba ou quando o jogador perde todas as vidas.
-
-## Objetivo do jogador
-
-Explique o que o jogador precisa fazer para vencer ou avançar no jogo.
-
-Exemplo:
-
-> O objetivo é coletar a maior quantidade possível de itens antes que o tempo acabe, evitando colisões com os obstáculos.
-
-## Regras do jogo
-
-Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador se movimenta usando as setas do teclado.
-- Cada item coletado aumenta a pontuação.
-- Colidir com um obstáculo reduz a quantidade de vidas.
-- A partida termina quando o jogador perde todas as vidas ou quando o tempo acaba.
-
-## Controles
-
-Informe as teclas ou comandos utilizados no jogo.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
-
-## Como executar o projeto
-
-### 1. Clonar o repositório
-
-```bash
-git clone LINK_DO_REPOSITORIO
-cd NOME_DA_PASTA
-pip install -r requirements.txt
-python main.py
-```
-
-## Como executar os testes
-
-```bash
-python -m pytest
-```
-
-## Checklist mínimo para entrega
-
-- Preencher este README com nome final, descrição real, regras e controles do jogo.
-- Atualizar `docs/proposta.MD` com a proposta do grupo.
-- Garantir que o jogo executa com `python main.py`.
-- Garantir que os testes passam com `pytest`.
-
-## Observações para os alunos
-
-- Mantenham o código organizado em módulos pequenos e com responsabilidade clara.
-- Comentem partes importantes da lógica, principalmente regras do jogo.
-- Registrem decisões técnicas no README do grupo ao longo do desenvolvimento.
+Para executar a primeira versão dos testes de unidade, abra o terminal na raiz do projeto e digite:
+`python -m unittest tests/tests_logica.py`
